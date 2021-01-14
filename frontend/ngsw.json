@@ -1,0 +1,107 @@
+{
+  "configVersion": 1,
+  "timestamp": 1610592568311,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/4.7c088229eff7c04562d9.js",
+        "/combined-sw.js",
+        "/favicon.ico",
+        "/firebase-messaging-sw.js",
+        "/index.html",
+        "/main.5627c7d9e4ad817eaa3c.js",
+        "/manifest.webmanifest",
+        "/polyfills.8c151b8375e767ff858f.js",
+        "/runtime.13e0bbec434d8aca23ff.js",
+        "/styles.3ff695c00d717f2d2a11.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/images/LaughterTheBestMedicine.jpg",
+        "/assets/images/YLYC.png",
+        "/assets/images/huser.jpg",
+        "/assets/images/huser.png",
+        "/assets/images/loginbg.jpg",
+        "/assets/images/signup.JPG",
+        "/assets/images/smiley.png",
+        "/assets/images/smiley.svg",
+        "/signup.f560e9ca7a8ce58a27c4.jpg",
+        "/ylyc.7e72951e55dbd86e4bc0.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/4.7c088229eff7c04562d9.js": "69a1eeeff75741c4473383611ecdfd9534e08008",
+    "/assets/icons/icon-128x128.png": "72db2e4d0f19dab595ac6c1bd77bdb67611a3afd",
+    "/assets/icons/icon-144x144.png": "fde191f72921aa1795af9e0d5ee2a9aa438be0a2",
+    "/assets/icons/icon-152x152.png": "8a02c75c71de1ed1a071cacf3318d76122cc8529",
+    "/assets/icons/icon-192x192.png": "d24a4b889958a71ee9c75e81ea7d562a30c62dbb",
+    "/assets/icons/icon-384x384.png": "9d3d5fdb13d194e30fc090f0632241168fc8a629",
+    "/assets/icons/icon-512x512.png": "935d034644e6319f357305630af2d7a5f75f2949",
+    "/assets/icons/icon-72x72.png": "45a9c4fdb53276729ed402e7c82705f8b60f8622",
+    "/assets/icons/icon-96x96.png": "065a29a3794ae041dbc12eb5aed497059159ce09",
+    "/assets/images/LaughterTheBestMedicine.jpg": "438bcbff3f62f5bf5397f492f68c0c52f2dc16d7",
+    "/assets/images/YLYC.png": "0c3e84e562c77403df566da368449f3e2d3e5790",
+    "/assets/images/huser.jpg": "4bb9dd588c307b89fe018a7cbb9a8661ba75562d",
+    "/assets/images/huser.png": "01e9fcf159fd3b73400798a53df6f52153db3a74",
+    "/assets/images/loginbg.jpg": "cebd4fd3078afa61483eed75ba386f8f767001ae",
+    "/assets/images/signup.JPG": "ad2a53033b0b4ca77b3fe06c4c4f93d8c1b321c7",
+    "/assets/images/smiley.png": "6ee2badb27380ddec2b863752b9ba236fbbc4c78",
+    "/assets/images/smiley.svg": "12fe99665900c3b0217bef4e83d97d94873c9908",
+    "/combined-sw.js": "8112fc507def9bc58605f5446997e569a7cc6dcb",
+    "/favicon.ico": "87d68c420979a50b4a878e464b9f91f09abf2a7d",
+    "/firebase-messaging-sw.js": "fde931dbcb59dcbbd91583048f3580f5d95f8017",
+    "/index.html": "12c8d0104df321164d0e03fc3f822ea93f0eab7e",
+    "/main.5627c7d9e4ad817eaa3c.js": "cbffaa16916b647481bc28e59429fc60b2e08de2",
+    "/manifest.webmanifest": "37b58d35e9f4c8231510500fe2dd93987907fe4b",
+    "/polyfills.8c151b8375e767ff858f.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
+    "/runtime.13e0bbec434d8aca23ff.js": "bd2abeaf11d2c8298e0c62d6afa7ea90324333bd",
+    "/signup.f560e9ca7a8ce58a27c4.jpg": "ad2a53033b0b4ca77b3fe06c4c4f93d8c1b321c7",
+    "/styles.3ff695c00d717f2d2a11.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "/ylyc.7e72951e55dbd86e4bc0.png": "0c3e84e562c77403df566da368449f3e2d3e5790"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
