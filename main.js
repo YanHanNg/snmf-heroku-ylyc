@@ -201,11 +201,11 @@ let taskSleepNotification = cron.schedule('0 22 * * *', () => {
 })
 taskSleepNotification.start();
 
-let testNotification = cron.schedule('00 08 * * * *', () => {
-    console.info(`Running Task every day at 10pm ${new Date()}`);
-    createReminders(REMINDER_TYPE_SLEEP);
-})
-testNotification.start();
+// let testNotification = cron.schedule('00 08 * * * *', () => {
+//     console.info(`Running Task every day at 10pm ${new Date()}`);
+//     createReminders(REMINDER_TYPE_SLEEP);
+// })
+// testNotification.start();
 
 const createReminders = (type) => {
     //Create a Reminder for all the users and send notification
