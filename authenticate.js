@@ -14,7 +14,7 @@ const TOKEN_SECRET = process.env.TOKEN_SECRET || 'abcd1234';
 const { makeQuery, makeQueryForBulkInsert, pool } = require('./mysql_db.js');
 
 //Get User information from DB
-const SQL_GET_USER_INFO = "SELECT user_id, name, email, rewards_pts, notification, notification_token from user where user_id = ?";
+const SQL_GET_USER_INFO = "SELECT user_id, name, email, rewards_pts, notification, notification_token from user where user_id = ? and password = sha(?)";
 const getUserInfo = makeQuery(SQL_GET_USER_INFO, pool);
 
 // configure passport with a strategy

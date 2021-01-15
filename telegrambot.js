@@ -20,6 +20,6 @@ const sendRemindersViaTelegram = (reminderType) => {
 }
 
 //------------------------Telegram Bot-------------------------------------------------------------------
-bot.launch();
+//bot.launch();
 
 module.exports = {bot, sendRemindersViaTelegram};

@@ -17,16 +17,16 @@ const REMINDER_TYPE_EXERCISE = 5;
 const REMINDER_TYPE_SLEEP = 6;
 
 //TESTING PURPOSE
-// let testNotification = cron.schedule('59 23 * * * 7', async () => {
-//     console.info(`Running Update Meals Database Every Sunday at 23:59 ${new Date()}`);
-//     try {
-//         await updateDBonMeals();
-//     }
-//     catch(err) {
-//         console.error('Error when updating Meals', err.message);
-//     }
-// })
-// testNotification.start();
+let mealUpdateScheduler = cron.schedule('00 59 23 * * 7', async () => {
+    console.info(`Running Update Meals Database Every Sunday at 23:59 ${new Date()}`);
+    try {
+        await updateDBonMeals();
+    }
+    catch(err) {
+        console.error('Error when updating Meals', err.message);
+    }
+})
+mealUpdateScheduler.start();
 
 const SQL_INSERT_BULK_INTO_MEALS = "INSERT into meals (reminder_type_id, image, message) values ?";
 const insertIntoMeals = makeQueryForBulkInsert(SQL_INSERT_BULK_INTO_MEALS, pool);
@@ -63,7 +63,7 @@ const getMeals = (reminderType) => {
         case REMINDER_TYPE_DINNER: {
             url = withQuery(SPOONACULAR_BASE_URL, {
                 apiKey: SPOONACULAR_API_KEY,
-                type: 'breakfast, bread, salad',
+                type: 'main course',
                 maxCalories: 600,
                 maxFat: 25,
                 maxProtein: 30,

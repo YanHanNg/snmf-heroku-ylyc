@@ -201,9 +201,9 @@ let taskSleepNotification = cron.schedule('0 22 * * *', () => {
 })
 taskSleepNotification.start();
 
-// let testNotification = cron.schedule('00 08 * * * *', () => {
+// let testNotification = cron.schedule('30 26 * * * *', () => {
 //     console.info(`Running Task every day at 10pm ${new Date()}`);
-//     createReminders(REMINDER_TYPE_SLEEP);
+//     createReminders(REMINDER_TYPE_EXERCISE);
 // })
 // testNotification.start();
 
